@@ -1,27 +1,140 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <link rel="canonical" href="https://example.com"/>
-    <meta name="robots" content="index, follow">
-    <meta property="og:title" content="Your Page Title" />
-    <meta property="og:description" content="Your page description." />
-    <meta property="og:url" content="https://example.com" />
-    <meta property="og:type" content="website" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Your Page Title" />
-    <meta name="twitter:description" content="Your page description." />
-    <meta name="theme-color" content="#ffffff">
-    <meta name="color-scheme" content="light dark">
-    <title>Your Page Title</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Fly | 科技与学术博客</title>
+  <meta name="description" content="Fly 的个人博客：机器人、航模、嵌入式、视觉、代码与科研记录。" />
+
+  <meta name="robots" content="index,follow" />
+  <meta name="author" content="Fly" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Fly | 科技与学术博客" />
+  <meta property="og:description" content="Fly 的个人博客：机器人、航模、嵌入式、视觉、代码与科研记录。" />
+  <meta property="og:url" content="https://fly173.github.io/" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Fly | 科技与学术博客" />
+  <meta name="twitter:description" content="Fly 的个人博客：机器人、航模、嵌入式、视觉、代码与科研记录。" />
+
+  <link rel="stylesheet" href="style.css?v=719c731f" />
 </head>
+
 <body>
-    <a href="#main" class="skip-link">Skip to main content</a>
-    <main id="main">
-        <h1>Your main content here</h1>
-    </main>
+  <a class="skip-link" href="#main">跳到正文</a>
+
+  <div class="grid" aria-hidden="true"></div>
+
+  <header class="hero" aria-labelledby="hero-title" aria-describedby="hero-lead">
+    <nav class="nav" aria-label="主导航">
+      <div class="brand">FLY / LAB NOTE</div>
+      <div class="nav-links">
+        <a href="#about">关于</a>
+        <a href="#projects">项目</a>
+        <a href="#posts">文章</a>
+        <a href="#contact">联系</a>
+      </div>
+    </nav>
+
+    <section class="hero-content">
+      <div class="hero-text">
+        <p class="eyebrow">TECH × RESEARCH × ENGINEERING</p>
+        <h1 id="hero-title">Fly 的科技感学术博客</h1>
+        <p class="lead" id="hero-lead">
+          记录机器人、视觉、航模、嵌入式、代码与科研学习路径。
+          这里既放项目，也放思考。
+        </p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#projects">查看项目</a>
+          <a class="btn secondary" href="#posts">阅读文章</a>
+        </div>
+      </div>
+
+      <div class="hero-card" aria-label="终端简介">
+        <div class="terminal" role="group" aria-label="模拟终端输出">
+          <div class="terminal-top" aria-hidden="true">
+            <span></span><span></span><span></span>
+          </div>
+          <pre aria-label="终端内容">
+$ whoami
+fly
+
+$ focus --now
+robotics
+computer-vision
+embedded-systems
+research-notes
+
+$ status
+Building a personal lab on the web...
+          </pre>
+        </div>
+      </div>
+    </section>
+  </header>
+
+  <main id="main" class="container" tabindex="-1">
+    <section id="about" class="panel" aria-labelledby="about-title">
+      <h2 id="about-title">关于我</h2>
+      <p>
+        我是 Fly，喜欢飞机、航模、机器人、嵌入式、代码、气动分析和三维建模。
+        这个网站会持续更新我的学习笔记、项目记录、实验过程和技术总结。
+      </p>
+    </section>
+
+    <section id="projects" class="panel" aria-labelledby="projects-title">
+      <h2 id="projects-title">项目方向</h2>
+      <div class="cards">
+        <article class="card">
+          <h3>机器人视觉</h3>
+          <p>OpenCV、ROS2、目标检测、传感器融合、滤波与部署。</p>
+        </article>
+        <article class="card">
+          <h3>航模与气动</h3>
+          <p>固定翼设计、气动分析、翼型选择、参数计算与试飞记录。</p>
+        </article>
+        <article class="card">
+          <h3>嵌入式与控制</h3>
+          <p>MCU、通信、执行机构控制、工程实现与系统联调。</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="posts" class="panel" aria-labelledby="posts-title">
+      <h2 id="posts-title">文章示例</h2>
+      <div class="post-list">
+        <article class="post">
+          <span class="tag">ROS2</span>
+          <h3>从 0 搭建一个视觉节点</h3>
+          <p>写给未来的自己：如何从工作空间、包、节点一路走到消息通信。</p>
+        </article>
+        <article class="post">
+          <span class="tag">AERO</span>
+          <h3>固定翼航模参数初算</h3>
+          <p>翼展、翼面积、展弦比、重心与动力系统的第一轮估算。</p>
+        </article>
+        <article class="post">
+          <span class="tag">CV</span>
+          <h3>相机成像与图像质量基础</h3>
+          <p>从快门、ISO、噪声到图像处理链条的工程理解。</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="panel" aria-labelledby="contact-title">
+      <h2 id="contact-title">联系 / 仓库</h2>
+      <p>
+        GitHub:
+        <a href="https://github.com/fly173" target="_blank" rel="noopener noreferrer">github.com/fly173</a>
+      </p>
+      <p>站点建议地址：<code>https://fly173.github.io</code></p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© 2026 Fly · Built for GitHub Pages</p>
+  </footer>
 </body>
 </html>
