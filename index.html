@@ -1,22 +1,118 @@
-<section id="projects" class="panel">
-  <h2>我的作品</h2>
-  <div class="cards">
-    <article class="card">
-      <h3>飞设</h3>
-      <p>飞机总体设计、气动参数估算、布局方案、结构与任务需求分析。</p>
-      <a class="btn secondary" href="https://github.com/fly173/flight-design" target="_blank">点击查看作品</a>
-    </article>
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fly | 科技与学术博客</title>
+  <meta name="description" content="Fly 的个人博客：机器人、航模、嵌入式、视觉、代码与科研记录。" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="grid"></div>
+  <header class="hero">
+    <nav class="nav">
+      <div class="brand">FLY / LAB NOTE</div>
+      <div class="nav-links">
+        <a href="#about">关于</a>
+        <a href="#projects">项目</a>
+        <a href="#posts">文章</a>
+        <a href="#contact">联系</a>
+      </div>
+    </nav>
 
-    <article class="card">
-      <h3>飞控</h3>
-      <p>控制逻辑、姿态稳定、传感器输入、控制算法与系统联调记录。</p>
-      <a class="btn secondary" href="https://github.com/fly173/flight-control" target="_blank">点击查看作品</a>
-    </article>
+    <section class="hero-content">
+      <div class="hero-text">
+        <p class="eyebrow">TECH × RESEARCH × ENGINEERING</p>
+        <h1>Fly 的科技感学术博客</h1>
+        <p class="lead">
+          记录机器人、视觉、航模、嵌入式、代码与科研学习路径。
+          这里既放项目，也放思考。
+        </p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#projects">查看项目</a>
+          <a class="btn secondary" href="#posts">阅读文章</a>
+        </div>
+      </div>
+      <div class="hero-card">
+        <div class="terminal">
+          <div class="terminal-top">
+            <span></span><span></span><span></span>
+          </div>
+          <pre>
+$ whoami
+fly
 
-    <article class="card">
-      <h3>ROS2</h3>
-      <p>工作空间、节点、话题通信、视觉系统接入与机器人软件架构学习。</p>
-      <a class="btn secondary" href="https://github.com/fly173/ros2-study" target="_blank">点击查看作品</a>
-    </article>
-  </div>
-</section>
+$ focus --now
+robotics
+computer-vision
+embedded-systems
+research-notes
+
+$ status
+Building a personal lab on the web...
+          </pre>
+        </div>
+      </div>
+    </section>
+  </header>
+
+  <main class="container">
+    <section id="about" class="panel">
+      <h2>关于我</h2>
+      <p>
+        我是 Fly，喜欢飞机、航模、机器人、嵌入式、代码、气动分析和三维建模。
+        这个网站会持续更新我的学习笔记、项目记录、实验过程和技术总结。
+      </p>
+    </section>
+
+    <section id="projects" class="panel">
+      <h2>项目方向</h2>
+      <div class="cards">
+        <article class="card">
+          <h3>机器人视觉</h3>
+          <p>OpenCV、ROS2、目标检测、传感器融合、滤波与部署。</p>
+        </article>
+        <article class="card">
+          <h3>航模与气动</h3>
+          <p>固定翼设计、气动分析、翼型选择、参数计算与试飞记录。</p>
+        </article>
+        <article class="card">
+          <h3>嵌入式与控制</h3>
+          <p>MCU、通信、执行机构控制、工程实现与系统联调。</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="posts" class="panel">
+      <h2>文章示例</h2>
+      <div class="post-list">
+        <article class="post">
+          <span class="tag">ROS2</span>
+          <h3>从 0 搭建一个视觉节点</h3>
+          <p>写给未来的自己：如何从工作空间、包、节点一路走到消息通信。</p>
+        </article>
+        <article class="post">
+          <span class="tag">AERO</span>
+          <h3>固定翼航模参数初算</h3>
+          <p>翼展、翼面积、展弦比、重心与动力系统的第一轮估算。</p>
+        </article>
+        <article class="post">
+          <span class="tag">CV</span>
+          <h3>相机成像与图像质量基础</h3>
+          <p>从快门、ISO、噪声到图像处理链条的工程理解。</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="panel">
+      <h2>联系 / 仓库</h2>
+      <p>GitHub: <a href="https://github.com/fly173" target="_blank" rel="noreferrer">github.com/fly173</a></p>
+      <p>站点建议地址：<code>https://fly173.github.io</code></p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© 2026 Fly · Built for GitHub Pages</p>
+  </footer>
+</body>
+</html>
